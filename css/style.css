@@ -30,7 +30,7 @@ body {
 }
 
 .purple {
-    color: #6415ff;
+    color: #6415ff; 
 }
 
 section {
@@ -41,12 +41,23 @@ main {
     margin-bottom: 96px;
 }
 
-h1 {
-    font-size: 36x;
+h1 h2 h3 h4 h5 h6 {
     font-weight: 800;
     line-height: 1.5;
-    color: black;
     font-family: 'lato', serif;
+}
+h1 {
+    font-size: 2em;
+    color: black;
+}
+h3 {
+    color: purple;
+    padding-bottom: 1.5em;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #243e63;
 }
 /* 
 
@@ -220,6 +231,41 @@ header .row {
 }
 #header__img {
     width: 50%;
+}
+
+.header__form {
+    max-width: 90%;
+    height: 15px;
+    padding: 3em;
+}
+
+#field__input {
+    width: 50%;
+    background: none;
+    border: 1px solid #6415ff;
+    padding: 8px 19px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+#field__button {
+    background: #6415ff;
+    color: white;
+    border: 1px solid #6415ff;
+    padding: 8px 19px;
+    border-radius: 50px;
+}
+
+#field__button:hover {
+    background: purple;
+        color: white;
+    transition: all 300ms ease;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    max-width: 100%;
 }
 
 
