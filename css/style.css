@@ -42,11 +42,11 @@ main {
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 36x;
+    font-weight: 800;
     line-height: 1.5;
-    color: #6415ff;
-    font-family: 'Anton', serif;
+    color: black;
+    font-family: 'lato', serif;
 }
 /* 
 
@@ -139,7 +139,7 @@ nav {
 
 .modal__link--primary {
     color: #f7fafc;
-    padding: 12px 32px;
+    padding: 6px 12px;
     background: #6415ff;
     border-radius: 500px;
     border: none;
@@ -162,9 +162,41 @@ nav {
     cursor: pointer;
 }
 
-.large__menu .modal__link:hover {
-    border-bottom: 2px solid #6415ff;
-}   
+    .large__menu .modal__link:hover {
+        border-bottom: 2px solid #6415ff;
+        transition: opacity 300ms ease;
+    }
+
+.large__menu .modal__link--primary:hover {
+    background: #243e63;
+    color: #f7fafc;
+    border-radius: 500px;
+    border: none;
+    transition: all 300ms ease;
+}
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: -3px;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+    background-color: #fff;
+}
+
+.link__hover-effect--black:after {
+    background-color: #000;
+}
+
+.link__hover-effect:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 /* 
 
 HEADER / ABOUT US ↓
@@ -179,6 +211,7 @@ header .row {
 }
 .header__content {
     max-width: 50%;
+    padding-bottom: 5em;
 }
 
 .header__image {
