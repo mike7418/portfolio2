@@ -12,6 +12,15 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 }
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1a202c;
+    margin-bottom: 24px;
+    max-width: 70%;
+    text-align: center;
+
+}
 
 .row {
     width: 100%;
@@ -58,7 +67,15 @@ h2 {
     font-size: 1.5em;
     font-weight: 800;
     color: #243e63;
+    padding-bottom: 1.5em;
 }
+h4 {
+    
+    color: #243e63;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
 /* 
 
 NAVBAR ↓
@@ -221,7 +238,7 @@ header .row {
     justify-content: space-between;
 }
 .header__content {
-    max-width: 50%;
+    max-width: 40%;
     padding-bottom: 5em;
 }
 
@@ -275,86 +292,95 @@ header .row {
 FEATURES ↓
 
 */
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 #features {
     position: relative;
+    //border: 1px solid lightgrey;
 }
 
     #features .row__narrow {
         display: flex;
         flex-direction: column;
         align-items: center;
+      //  border: 1px solid lightgrey;
     }
+.col-1-of-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid lightgrey;
+    padding-left: 5em;
+}
 
-
-/* 
+.features__image {
+    float: left;
+    margin-right: 16px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+    /* 
 
 QUALITY WORK ↓
 
 */
-
-
-#quality .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* 
+    #quality .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* 
 
 STEPS ↓
 
 */
 
 
-#steps .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* 
+    #steps .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* 
 
 VALUES ↓
 
 */
 
-#values .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/*
+    #values .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*
 
 PRICING ↓
 
 */
 
 
-#pricing .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* 
+    #pricing .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* 
 
 TESTIMONIALS ↓
 
 */
 
 
-#testimonials .row {
-    display: flex;
-}
-
-
-/* 
+    #testimonials .row {
+        display: flex;
+    }
+    /* 
 
 START / CALL TO ACTION ↓
 
@@ -362,115 +388,133 @@ START / CALL TO ACTION ↓
 
 
 
-#start .row {
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* 
+    #start .row {
+        position: relative;
+        overflow: hidden;
+    }
+    /* 
 
 FOOTER ↓
 
 */
 
 
-footer {
-    padding: 96px 32px;
-    background-color: rgb(100, 21, 255);
-    margin-bottom: -32px;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* 
+    footer {
+        padding: 96px 32px;
+        background-color: rgb(100, 21, 255);
+        margin-bottom: -32px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* 
 
 MOBILE RESPONSIVENESS ↓
 
 */
 
 
-@media(max-width: 1280px) {
-    header .row {
-        align-items: flex-end;
+    @media(max-width: 1280px) {
+        header .row {
+            align-items: flex-end;
+        }
+
+        .large__menu {
+            display: visible;
+            flex: inherit;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .modal__link {
+            text-decoration: none;
+            position: relative;
+            transition: opacity 300ms ease;
+            padding: 0 10px;
+        }
     }
 
-    .large__menu {
-        display: visible;
-        flex: inherit;
-        flex-direction: row;
-        justify-content: space-between;
+    @media (max-width: 1024px) {
+
+        .btn__menu {
+            display: block;
+        }
+
+        .large__menu {
+            display: hidden;
+            visibility: hidden;
+        }
+
+        header .row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            padding: 80px 32px;
+        }
     }
 
-    .modal__link {
-        text-decoration: none;
-        position: relative;
-        transition: opacity 300ms ease;
-        padding: 0 10px;
-    }
-}
+    @media(max-width: 768px) {
+        #quality .row,
+        #values .row {
+            flex-direction: column-reverse;
+        }
 
-@media (max-width: 1024px) {
+        #steps .row,
+        #testimonials .row,
+        .col-1-of-4 {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .btn__menu {
-        display: block;
-    }
-    .large__menu {
-        display: hidden;
-        visibility: hidden;
-    }
-    header .row {
-        flex-direction: column;
-        align-items: center;
-    }
+        .large__menu {
+            display: hidden;
+            visibility: hidden;
+        }
 
-    footer {
-        padding: 80px 32px;
-    }
-}
+        #pricing .row {
+            margin-top: 40px;
+        }
 
-@media(max-width: 768px) {
-    #quality .row,
-    #values .row {
-        flex-direction: column-reverse;
-    }
+        .header__content {
+            max-width: 100%;
+        }
 
-    #steps .row,
-    #testimonials .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .large__menu {
-        display: hidden;
-        visibility: hidden; 
-    }
+            .features__feature {
+               flex-direction: column;
+               align-items: center;
+                // border: 1px solid #6415ff;
+                padding-left: 0;
+            }
 
-    #pricing .row {
-        margin-top: 40px;
-    }
-}
+                .features__feature p {
+                    text-align: center;
+                    max-width: 100%;
+                    padding: 0 20px;
+                }
+        }
 
-@media(max-width: 640px) {
-    .row {
-        flex-direction: column;
-    }
-    
-    .container {
-        padding: 80px 0;
-    }
+    @media(max-width: 640px) {
+        .row {
+            flex-direction: column;
+        }
 
-    .nav__logo {
-        margin: 8px 0;
-        padding-bottom: 4px;
-        width: 20%;
-    }
-    .large__menu {
-        display: hidden;
-        visibility: hidden; 
-    }
+        .container {
+            padding: 80px 0;
+        }
 
-    main {
-        margin-bottom: 80px;
+        .nav__logo {
+            margin: 8px 0;
+            padding-bottom: 4px;
+            width: 20%;
+        }
+
+        .large__menu {
+            display: hidden;
+            visibility: hidden;
+        }
+
+        main {
+            margin-bottom: 80px;
+        }
     }
-}
