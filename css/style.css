@@ -498,26 +498,70 @@ VALUES ↓
     flex-direction: column;
     padding: 8px;
     height: 100%;
-}
-.values__icon {
-    display: flex;
-    margin: 0;
-    padding: 10px;
-    border-radius: 50px;
     //border: 1px solid #6415ff;
-    height: 100%
 }
-#green {
-    background: lightgreen;
-}
-
-
-.values__image {
+.values__feature {
     display: flex;
-    max-width: 50%;
-    height: auto;
+    flex-direction: row;
 }
-/*
+#values--icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+   // border: 1px solid #6415ff;
+}
+#values--text {
+    padding: 8px;
+}
+
+.values__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+   // border: 1px solid #6415ff;
+} 
+
+.values__item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1a202c;
+    width: 40%;
+    padding-right: 1em;
+}
+
+    .values__icon {
+        //display: flex;
+        margin: 0;
+        padding: 10px;
+        border-radius: 50px;
+        //border: 1px solid #6415ff;
+        height: 100%
+    }
+
+        .values__icon img {
+            height: 16px;
+            width: 16px;
+        }
+
+    #green {
+        background: lightgreen;
+    }
+
+    #red {
+        background: lightcoral;
+    }
+
+
+    .values__image {
+        display: flex;
+        max-width: 50%;
+        height: auto;
+    }
+    /*
 
 PRICING ↓
 
