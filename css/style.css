@@ -73,6 +73,22 @@ h4 {
     padding-top: 1em;
 }
 
+/* special text format */
+#quality h1, #steps h1,
+.values__content h1 {
+    color: #243e63;
+    font-size: 48px;
+}
+
+
+/* large graphics size limits */
+.quality__image img, .values__image img,
+.steps__image img, .header__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* 
 
 NAVBAR ↓
@@ -222,13 +238,12 @@ nav {
     left: 0;
 }
 
+
 /* 
 
 HEADER / ABOUT US ↓
 
 */
-
-
 header .row {
     display: flex;
     align-items: center;
@@ -238,43 +253,18 @@ header .row {
     max-width: 40%;
     padding-bottom: 5em;
 }
-
+.header__content p {
+    text-align: left;
+}
 .header__image {
     display: flex;  
     max-width: 100%;
 }
+/*
 #header__img {
     width: 50%;
 }
-
-.header__form {
-    max-width: 90%;
-    height: 15px;
-    padding: 3em;
-}
-
-#field__input {
-    width: 50%;
-    background: none;
-    border: 1px solid #6415ff;
-    padding: 8px 19px;
-    border-radius: 50px;
-    letter-spacing: 1px;
-}
-
-#field__button {
-    background: #6415ff;
-    color: white;
-    border: 1px solid #6415ff;
-    padding: 8px 19px;
-    border-radius: 50px;
-}
-
-#field__button:hover {
-    background: purple;
-        color: white;
-    transition: all 300ms ease;
-}
+    */
 .header__logo {
     display: flex;
     align-items: center;
@@ -282,7 +272,40 @@ header .row {
     max-width: 100%;
 }
 
+/* Email form css*/
+.header__form {
+    max-width: 100%;
+    height: 2emx;
+    background: none;
+    border: 1px solid lightgrey;
+    padding: 8px 2px;
+    border-radius: 50px;
+    max-width: 70%;
+}
+#field__input {
+    width: 63%;
+    background: none;
+    border:none;
+    padding: 8px 19px;
+}
+#field__input:focus {
+    outline: none;
+}
+#field__button {
+    background: #6415ff;
+    color: white;
+    border: 1px solid #6415ff;
+    padding: 8px 19px;
+    align-items: right;
+    border-radius: 50px;
+}
 
+#field__button:hover {
+    background: #243e63;
+    color: white;
+    transition: all 300ms ease;
+}
+/*end*/
 
 /* 
 
@@ -312,11 +335,9 @@ FEATURES ↓
     flex-direction: row;
     justify-content: space-between;
     //border: 1px solid lightgrey;
-   // padding-left: 5em;
 }
 .features__feature {
     display: flex;
-  //  flex-direction: column;
     align-items: center;
     //border: 1px solid lightgrey;
     width: calc(100%/3);
@@ -325,8 +346,7 @@ FEATURES ↓
     margin: 0;
     padding-top: 10px;
     //border: 1px solid #6415ff;
-    height: 100%;
-    
+    height: 100%;    
 }
 
 .features__text {
@@ -354,7 +374,8 @@ FEATURES ↓
      border: 1px solid lightgrey;
      border-radius: 50%;
  }
-        /* 
+
+ /* 
 QUALITY WORK ↓
 */
  #quality .row {
@@ -377,16 +398,7 @@ QUALITY WORK ↓
      display: flex;   
      max-width: 50%;
      height: auto;
-    }   
- .quality__image img {
-     width: 100%;
-     height: auto;
-     border-radius: 8px;
- }
-#quality h1, #steps h1 {
-    color: #243e63;
-    font-size: 48px;
-}
+ }   
 #quality h4, #steps h4 {
     font: 'Manrope';
     font-size: 18px;
@@ -409,7 +421,9 @@ QUALITY WORK ↓
     background: purple;
     transition: all 300ms ease;
 }
-        /* 
+
+
+/* 
 
 STEPS ↓
 
@@ -440,9 +454,6 @@ STEPS ↓
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    //width: 250px;
-    //max-width: 100%;
-   // padding: 1em;
 }
 .steps__feature div {
     display: flex;  
@@ -475,12 +486,38 @@ VALUES ↓
 
 */
 
-    #values .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /*
+#values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    height: 100%;
+}
+.values__icon {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    border-radius: 50px;
+    //border: 1px solid #6415ff;
+    height: 100%
+}
+#green {
+    background: lightgreen;
+}
+
+
+.values__image {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+}
+/*
 
 PRICING ↓
 
@@ -600,8 +637,6 @@ MOBILE RESPONSIVENESS ↓
         }
 
         .col-1-of-4 {
-            display: flex;
-            flex-direction: column;
             padding-left: 0;
             max-width: 100%;
             //border: 1px solid #6415ff;
