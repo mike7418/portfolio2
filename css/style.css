@@ -415,27 +415,61 @@ STEPS ↓
 */
 
 
-        #steps .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+#steps .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .steps__content {
+    display: flex;
     flex-direction: column;
 }
-    .steps__content h3 {
-        color: #243e63;
-    }
-
+.steps__content h3 {
+    color: #243e63;
+}
 .steps__number {
     color: #b9b2e8;
     font: 'Work Sans';
     font-size: 48px;
     font-weight: 500;
+    width: 1em;
 }
- /* 
+.steps__feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    //width: 250px;
+    //max-width: 100%;
+   // padding: 1em;
+}
+.steps__feature div {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1em;
+    //border: 1px solid lightgrey;
+}
+.steps__feature h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.5;
+    padding: 0;
+    //border: 1px solid lightgrey;
+}
+.steps__feature p {
+    text-align:left;
+    padding: 0;
+    font-size: 14px;
+    vertical-align: top;
+}
+#steps__text {
+    display: flex;
+    flex-direction: column;
+}
 
+
+/*
 VALUES ↓
 
 */
