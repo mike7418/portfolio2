@@ -124,8 +124,7 @@ h4 {
     .quality__button:hover,
     .values__button:hover,
     .pricing__button:hover,
-    .start__button:hover,
-    #start__button--start:hover {
+    .start__button:hover {
         background: #243e63;
         color: white;
         transition: all 300ms ease;
@@ -574,7 +573,7 @@ PRICING ↓
     text-align: center;
     font-size: 18px;
     max-width: 50%;
-   // border: 1px solid #6415ff;
+    //border: 1px solid #6415ff;
 }
 .pricing__cards {
     display: flex;
@@ -769,153 +768,60 @@ START / CALL TO ACTION ↓
 #start__button--start {
     background-color: coral;
 }
+    #start__button--start:hover {
+        border: 1px solid white;
+        background: #243e63;
+        color: white;
+        transition: all 300ms ease;
+    }
 #start__button--contact {
     border: 1px solid white;
 }
-    /* 
+        /* 
 
 FOOTER ↓
         *
 */
 
 
-    footer {
-        padding: 96px 32px;
-        background-color: rgb(100, 21, 255);
-        margin-bottom: -32px;
-        position: relative;
-        overflow: hidden;
-    }
-    /* 
+        footer {
+            padding: 96px 32px;
+            background-color: rgb(100, 21, 255);
+            margin-bottom: -32px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* 
 
 MOBILE RESPONSIVENESS ↓
 
 */
 
 
-    @media(max-width: 1280px) {
-        header .row {
-            align-items: flex-end;
-        }
-
-        .large__menu {
-            display: visible;
-            flex: inherit;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        .modal__link {
-            text-decoration: none;
-            position: relative;
-            transition: opacity 300ms ease;
-            padding: 0 10px;
-        }
-    }
-
-    @media (max-width: 1024px) {
-
-        .btn__menu {
-            display: block;
-        }
-
-        .large__menu {
-            display: hidden;
-            visibility: hidden;
-        }
-
-        header .row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        footer {
-            padding: 80px 32px;
-        }
-    }
-
-    @media(max-width: 768px) {
-        #quality .row,
-        #values .row {
-            flex-direction: column-reverse;
-        }
-
-        #steps .row,
-        #testimonials .row,
-        .col-1-of-4,
-        #quality .row,
-        .values__feature,
-        .pricing__cards,
-        .start__content {
-            flex-direction: column;
-            align-items: center;
-            justify-items: flex-end;
-        }
-        
-        #start__text, #start__buttons {
-            width: 100%;
-        }
-        
-
-        .values__content {
-            align-items: flex-start;
-            max-width: 100%;
-            padding: 0;
-        }
-
-        .large__menu {
-            display: hidden;
-            visibility: hidden;
-        }
-
-        #pricing .row {
-            margin-top: 40px;
-        }
-
-        .col-1-of-4 {
-            padding-left: 0;
-            max-width: 100%;
-            //border: 1px solid #6415ff;
-        }
-
-        .features__feature {
-            flex-direction: column;
-            align-items: center;
-            //border: 1px solid #6415ff;
-            width: 100%;
-            padding: 1em;
-        }
-
-        .features__text {
-            padding-right: 0;
-            text-align: center;
-        }
-
-        #quality .container {
-            padding: 0;
-        }
-
-        .quality__content, .quality__image,
-        .header__content, .header__image, .header__img,
-        .values__image, .testimonials__content, .testimonials__image,
-        #start__text, #start__buttons {
-            max-width: 100%;
-            padding: 0;
-        }
-
-        @media(max-width: 640px) {
-            .row {
-                flex-direction: column;
+        @media(max-width: 1280px) {
+            header .row {
+                align-items: flex-end;
             }
 
-            .container {
-                padding: 20px 0
+            .large__menu {
+                display: visible;
+                flex: inherit;
+                flex-direction: row;
+                justify-content: space-between;
             }
 
-            .nav__logo {
-                margin: 8px 0;
-                padding-bottom: 4px;
-                width: 20%;
+            .modal__link {
+                text-decoration: none;
+                position: relative;
+                transition: opacity 300ms ease;
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+
+            .btn__menu {
+                display: block;
             }
 
             .large__menu {
@@ -923,7 +829,106 @@ MOBILE RESPONSIVENESS ↓
                 visibility: hidden;
             }
 
-            main {
-                margin-bottom: 80px;
+            header .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                padding: 80px 32px;
             }
         }
+
+        @media(max-width: 768px) {
+            #quality .row,
+            #values .row {
+                flex-direction: column-reverse;
+            }
+
+            #steps .row,
+            #testimonials .row,
+            .col-1-of-4,
+            #quality .row,
+            .values__feature,
+            .pricing__cards,
+            .start__content {
+                flex-direction: column;
+                align-items: center;
+                justify-items: flex-end;
+            }
+
+            #start__text, #start__buttons {
+                width: 100%;
+            }
+
+
+            .values__content {
+                align-items: flex-start;
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .large__menu {
+                display: hidden;
+                visibility: hidden;
+            }
+
+            #pricing .row {
+                margin-top: 40px;
+            }
+
+            .col-1-of-4 {
+                padding-left: 0;
+                max-width: 100%;
+                //border: 1px solid #6415ff;
+            }
+
+            .features__feature {
+                flex-direction: column;
+                align-items: center;
+                //border: 1px solid #6415ff;
+                width: 100%;
+                padding: 1em;
+            }
+
+            .features__text {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            #quality .container {
+                padding: 0;
+            }
+
+            .quality__content, .quality__image,
+            .header__content, .header__image, .header__img,
+            .values__image, #pricing p,.testimonials__content, .testimonials__image,
+            #start__text, #start__buttons {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            @media(max-width: 640px) {
+                .row {
+                    flex-direction: column;
+                }
+
+                .container {
+                    padding: 20px 0
+                }
+
+                .nav__logo {
+                    margin: 8px 0;
+                    padding-bottom: 4px;
+                    width: 20%;
+                }
+
+                .large__menu {
+                    display: hidden;
+                    visibility: hidden;
+                }
+
+                main {
+                    margin-bottom: 80px;
+                }
+            }
