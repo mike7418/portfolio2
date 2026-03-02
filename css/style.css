@@ -735,32 +735,36 @@ START / CALL TO ACTION ↓
     flex-direction: row;
     background-color: rgb(100, 21, 255);
     padding: 3em;
+   // border: 1px solid lightgrey;
 }
 #start__text h2 {
     font-size: 28px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-weight: 700;
     line-height: 1.5;
-    width:100%;
-    //padding-right: 2em; 
+    width: 100%;
+    //padding-right: 2em;
+    // border: 1px solid lightgrey;
 }
 #start__text {
     padding: 0;
     width: 60%;
     padding-left: 5em;
+    // border: 1px solid lightgrey;
 }
 .start__content div {
     display: flex;
     width: 50%;
     height: auto;
     padding: 2em;
+    // border: 1px solid lightgrey;
 }
 #start__buttons {
     display: flex;
     justify-content: space-between;
     padding: 3em 5em;
-    //border: 1px solid white;
+    // border: 1px solid white;
 }
 #start__button--start {
     background-color: coral;
@@ -841,11 +845,17 @@ MOBILE RESPONSIVENESS ↓
         .col-1-of-4,
         #quality .row,
         .values__feature,
-        .pricing__cards {
+        .pricing__cards,
+        .start__content {
             flex-direction: column;
             align-items: center;
             justify-items: flex-end;
         }
+        
+        #start__text, #start__buttons {
+            width: 100%;
+        }
+        
 
         .values__content {
             align-items: flex-start;
@@ -887,8 +897,10 @@ MOBILE RESPONSIVENESS ↓
 
         .quality__content, .quality__image,
         .header__content, .header__image, .header__img,
-        .values__image, .testimonials__content, .testimonials__image {
+        .values__image, .testimonials__content, .testimonials__image,
+        #start__text, #start__buttons {
             max-width: 100%;
+            padding: 0;
         }
 
         @media(max-width: 640px) {
