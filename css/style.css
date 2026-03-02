@@ -783,21 +783,43 @@ FOOTER ↓
         *
 */
 
+footer {
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+}
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //border: 1px solid lightgrey;
+}
+.footer__menu li{
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+.footer__content li:hover {
+    cursor: pointer;
+}
+.footer__menu h4 {
+    color: white;
+}
+.footer__copy h5 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1em;
+    font-size: 13px;
+    text-align: center; 
+    width: 100%;
+}
 
-        footer {
-            padding: 96px 32px;
-            background-color: rgb(100, 21, 255);
-            margin-bottom: -32px;
-            position: relative;
-            overflow: hidden;
-        }
-        /* 
-
+/* 
 MOBILE RESPONSIVENESS ↓
-
 */
-
-
         @media(max-width: 1280px) {
             header .row {
                 align-items: flex-end;
