@@ -16,6 +16,7 @@ p {
     font-size: 18px;
     line-height: 1.5;
     color: #1a202c;
+    padding-top: 1em;
     margin-bottom: 24px;
     max-width: 100%;
     text-align: center;
@@ -69,13 +70,22 @@ h2 {
     padding-bottom: 1.5em;
 }
 h4 {
-    color: #243e63;
+    //color: #243e63;
     padding-top: 1em;
+    font: 'Manrope';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #1a202c;
+    padding-bottom: 1em;
 }
+
 
 /* special text format */
 #quality h1, #steps h1,
-.values__content h1 {
+.values__content h1,
+#pricing h1 {
     color: #243e63;
     font-size: 48px;
 }
@@ -88,6 +98,32 @@ h4 {
     height: auto;
     border-radius: 8px;
 }
+
+/* Button styleing */
+#field__button,
+.quality__button,
+.values__button,
+.pricing__button {
+    background: #6415ff;
+    color: white;
+    border: 1px solid #6415ff;
+    padding: 12px 19px;
+    align-items: right;
+    border-radius: 50px;
+    border: none;
+    max-width: 150px;
+    font-weight:500;
+    font-size: 16px;
+}
+
+    #field__button:hover,
+    .quality__button:hover,
+    .values__button:hover,
+    .pricing__button:hover {
+        background: #243e63;
+        color: white;
+        transition: all 300ms ease;
+    }
 
 /* 
 
@@ -260,11 +296,6 @@ header .row {
     display: flex;  
     max-width: 100%;
 }
-/*
-#header__img {
-    width: 50%;
-}
-    */
 .header__logo {
     display: flex;
     align-items: center;
@@ -283,7 +314,7 @@ header .row {
     max-width: 70%;
 }
 #field__input {
-    width: 63%;
+    width: 60%;
     background: none;
     border:none;
     padding: 8px 19px;
@@ -291,20 +322,7 @@ header .row {
 #field__input:focus {
     outline: none;
 }
-#field__button {
-    background: #6415ff;
-    color: white;
-    border: 1px solid #6415ff;
-    padding: 8px 19px;
-    align-items: right;
-    border-radius: 50px;
-}
 
-#field__button:hover {
-    background: #243e63;
-    color: white;
-    transition: all 300ms ease;
-}
 /*end*/
 
 /* 
@@ -359,14 +377,6 @@ FEATURES ↓
 .features__text p {
     text-align: left;
 }
-
-.features__feature h4 {
-    font-size: 18px;
-    font-weight: 600;
-    // line-height: 1.5;
-     color: #1a202c;
- }
-
  .features__image {
     //float: left;
      margin-right: 16px;
@@ -399,28 +409,7 @@ QUALITY WORK ↓
      max-width: 50%;
      height: auto;
  }   
-#quality h4, #steps h4 {
-    font: 'Manrope';
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    color: #1a202c;
-    padding-bottom: 1em;
-}
-.quality__button {
-    color: #f7fafc;
-    padding: 6px 12px;
-    background: #6415ff;
-    border-radius: 500px;
-    border: none;
-    max-width: 150px;
-    align-self: center;
-}
-.quality__button:hover {
-    background: purple;
-    transition: all 300ms ease;
-}
+ 
 
 
 /* 
@@ -568,11 +557,99 @@ PRICING ↓
 */
 
 
-    #pricing .row {
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   // border: 1px solid #6415ff;
+}
+
+#pricing p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 50%;
+   // border: 1px solid #6415ff;
+}
+.pricing__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 70%;
+   // border: 1px solid #6415ff;
+}
+.pricing__card--header {
+    padding: 0;
+}
+
+    .pricing__card--header h2 {
+        border: 0;
+        padding: 0;
+       // text-align: center;
+       // border: 1px solid lightgrey;
+    }
+
+
+.pricing__card--sub {
+    width: 5px%;
+    padding: 2;
+    border: 0;
+    text-align: center;
+    font-size: 12px;
+    //border: 1px solid lightgrey;
+    padding-bottom: 16px;
+}
+.pricing__card--body ul {
+    padding-top: 2em;
+    padding-bottom:2em;
+}
+
+    .pricing__card--body li {
+        list-style: none;
+        margin: 0;
+    }
+
+    .pricing__card {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: calc(100%/3);
+        padding: 16px;
+        border: 1px solid lightgrey;
+        border-radius: 8px;
+        background-color: #fef7f7;
+        width: 250px;
     }
+
+    #per {
+        border-top: 5px solid #53f2f2;
+    }
+
+        #per:hover {
+            background-color: #53f2f2;
+            //opacity: 0.5;
+            transition: all 300ms ease;
+        }
+
+    #bus {
+        border-top: 5px solid #6415ffbe;
+    }
+
+        #bus:hover {
+            background-color: #6415ffbe;
+            //opacity: 0.5;
+            transition: all 300ms ease;
+        }
+
+    #ent {
+        border-top: 5px solid #ed2a2ac2;
+    }
+
+        #ent:hover {
+            background-color: #ed2a2ac2;
+            //opacity: 0.5;
+            transition: all 300ms ease;
+        }
     /* 
 
 TESTIMONIALS ↓
@@ -598,7 +675,7 @@ START / CALL TO ACTION ↓
     /* 
 
 FOOTER ↓
-
+        *
 */
 
 
@@ -667,9 +744,11 @@ MOBILE RESPONSIVENESS ↓
         #testimonials .row,
         .col-1-of-4,
         #quality .row,
-        .values__feature {
+        .values__feature,
+        .pricing__cards {
             flex-direction: column;
             align-items: center;
+            justify-items: flex-end;
         }
         .values__content {
             align-items: flex-start;
@@ -711,7 +790,7 @@ MOBILE RESPONSIVENESS ↓
 
         .quality__content, .quality__image,
         .header__content, .header__image, .header__img,
-        .values__image{
+        .values__image {
             max-width: 100%;
         }
 
