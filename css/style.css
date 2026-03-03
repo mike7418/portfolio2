@@ -873,7 +873,8 @@ MOBILE RESPONSIVENESS ↓
             #quality .row,
             .values__feature,
             .pricing__cards,
-            .start__content {
+            .start__content,.footer__content
+            {
                 flex-direction: column;
                 align-items: center;
                 justify-items: flex-end;
