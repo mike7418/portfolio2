@@ -905,6 +905,10 @@ MOBILE RESPONSIVENESS ↓
                 align-items: center;
                 justify-items: flex-end;
             }
+            .footer__content li {
+                width: 200px;
+               // border: 1px solid lightgrey;
+            }
 
             #start__text, #start__buttons {
                 width: 100%;
