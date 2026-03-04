@@ -13,13 +13,19 @@ body {
     overflow-x: hidden;
 }
 p {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.5;
     color: #1a202c;
-    padding-top: 1em;
+    margin-top: 2.5em;
     margin-bottom: 24px;
     max-width: 100%;
     text-align: center;
+}
+
+li {
+    font-size: 12px;
+    list-style: none;
+    line-height: 2;
 }
 
 .row {
@@ -53,7 +59,7 @@ main {
 h1 h2 h3 h4 h5 h6 {
     font-weight: 800;
     line-height: 1.5;
-    font-family: 'lato', serif;
+    //font-family: 'lato', serif;
 }
 h1 {
     font-size: 2em;
@@ -73,7 +79,7 @@ h4 {
     //color: #243e63;
     padding-top: 1em;
     font: 'Manrope';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1.5;
@@ -116,7 +122,7 @@ h4 {
     border: none;
     max-width: 150px;
     font-weight:500;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -158,16 +164,16 @@ nav {
     cursor: pointer;
 }
 .nav__logo--text {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
-    color: #6415ff;
+    color: black;
 }
 
 
 #logo {
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     margin-right: 8px;
 }
 
@@ -227,6 +233,11 @@ nav {
     border: none;
 }
 
+.modal__links--row {
+    font-size: 14px;
+}
+
+
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
@@ -241,6 +252,7 @@ nav {
 
 .large__menu .modal__link {
     padding: 8px 10px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -291,7 +303,7 @@ header .row {
     justify-content: space-between;
 }
 .header__content {
-    max-width: 40%;
+    max-width: 38%;
     padding-bottom: 5em;
 }
 .header__content p {
@@ -301,6 +313,12 @@ header .row {
     display: flex;  
     max-width: 100%;
 }
+.header__img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
 .header__logo {
     display: flex;
     align-items: center;
@@ -381,6 +399,7 @@ FEATURES ↓
 }
 .features__text p {
     text-align: left;
+    margin-top: 0.5em;
 }
  .features__image {
     //float: left;
@@ -389,7 +408,10 @@ FEATURES ↓
      border: 1px solid lightgrey;
      border-radius: 50%;
  }
-
+ .row__narrow p {
+     max-width: 50%;
+ }
+     
  /* 
 QUALITY WORK ↓
 */
@@ -402,7 +424,7 @@ QUALITY WORK ↓
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 28px;
     height: 100%;
     //border: 1px solid lightgrey;
 }
@@ -490,7 +512,7 @@ VALUES ↓
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    padding: 28px;
     height: 100%;
     //border: 1px solid #6415ff;
 }
@@ -519,26 +541,26 @@ VALUES ↓
 } 
 
 .values__item h4 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
     color: #1a202c;
-    width: 40%;
+    width: 60%;
     padding-right: 1em;
 }
 
     .values__icon {
         //display: flex;
         margin: 0;
-        padding: 10px;
+        padding: 8px;
         border-radius: 50px;
         //border: 1px solid #6415ff;
         height: 100%
     }
 
-        .values__icon img {
-            height: 16px;
-            width: 16px;
+        .values__icon {
+            height: 38px;
+            width: 38px;
         }
 
     #green {
@@ -571,7 +593,7 @@ PRICING ↓
 
 #pricing p {
     text-align: center;
-    font-size: 18px;
+    //font-size: 18px;
     max-width: 50%;
     //border: 1px solid #6415ff;
 }
@@ -679,7 +701,7 @@ TESTIMONIALS ↓
         max-width: 50%;
         display: flex;
         height: auto;
-        padding: 12px;
+        padding: 28px;
     }
     .testimonials__content h3 {
         padding: 0;
