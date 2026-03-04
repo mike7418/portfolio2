@@ -332,15 +332,16 @@ header .row {
 /* Email form css*/
 .header__form {
     max-width: 10%;
-    height: 2emx;
+    height: 1.5emx;
     background: none;
     border: 1px solid lightgrey;
     padding: 8px 2px;
     border-radius: 50px;
-    max-width: 70%;
+    max-width: 100%;
+    width: 300px;
 }
 #field__input {
-    width: 60%;
+    width: 150px;
     background: none;
     border:none;
     padding: 8px 19px;
