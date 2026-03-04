@@ -309,12 +309,16 @@ header .row {
 .header__content p {
     text-align: left;
 }
+    .header__content h6 {
+        margin-top: 20%;
+        line-height: 3.5;
+        color: grey;
+    }
 .header__image {
     display: flex;  
     max-width: 100%;
 }
 .header__img {
-    width: 100%;
     height: auto;
     padding: 10px;
 }
@@ -322,13 +326,12 @@ header .row {
 .header__logo {
     display: flex;
     align-items: center;
-    margin-top: 20%;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /* Email form css*/
 .header__form {
-    max-width: 100%;
+    max-width: 10%;
     height: 2emx;
     background: none;
     border: 1px solid lightgrey;
@@ -760,7 +763,7 @@ START / CALL TO ACTION ↓
 }
 #start__text h2 {
     font-size: 28px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     font-weight: 700;
     line-height: 1.5;
