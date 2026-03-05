@@ -92,7 +92,8 @@ h4 {
 #quality h1, #steps h1,
 .values__content h1,
 #pricing h1,
-#testimonials h1{
+#testimonials h1,
+#features h1 {
     color: #243e63;
     font-size: 48px;
 }
@@ -559,8 +560,11 @@ VALUES ↓
             // border: 1px solid #6415ff;
         }
 
-        #values--text {
-            padding: 8px;
+        #values__text p {
+            margin-top: 1em;
+            padding: 0;
+            text-align: left;
+            width: 245px;
         }
 
         .values__item {
@@ -682,9 +686,15 @@ PRICING ↓
             width: 270px;
             height: 420px;
         }
-        .pricing__card:hover {
-            color: white;
-        }
+            /*  Win directly targets the child elements on hover */
+            .pricing__card:hover h3,
+            .pricing__card:hover h2,
+            .pricing__card:hover span,
+            .pricing__card:hover li,
+            .pricing__card:hover strong { 
+                color: white;
+                text-shadow: 1px 1px grey;
+            }
 
         #per {
             border-top: 5px solid #53f2f291;
@@ -809,6 +819,11 @@ TESTIMONIALS ↓
                 .checked {
                     color: orange;
                 }
+#testimonials__author {
+    display: inline-flex;
+    flex-direction: row;
+   // justify-content: space-between;
+}
 
                 .testimonials__author {
                     width: 90px;
@@ -823,7 +838,7 @@ TESTIMONIALS ↓
 
                     .testimonials__author img {
                         width: 100%;
-                        /* Improving my own picture */
+                        /* Improving picture */
                         transform: scale(1.2);
                         padding-top: 8px;
                     }
@@ -831,7 +846,8 @@ TESTIMONIALS ↓
                 .testimonials__author--name {
                     padding: 0;
                     padding-top: 1em;
-                    padding-left: 7em;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
                     //border: 1px solid lightgrey;
                 }
 
@@ -839,6 +855,36 @@ TESTIMONIALS ↓
                         padding: 0;
                         margin: 0;
                     }
+
+.testimonials__author--nav {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-around;
+    //border: 1px solid lightgrey;
+    width: 150px;
+    max-width: 100%;
+}
+.nav__direction {
+    padding-top: 2.5em;
+    padding-left: 5em;
+}
+.nav__direction span {
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    margin: 0;
+    padding: 1em;
+    background: radial-gradient(circle, #dbcdcd, white);
+    colOR: BLUE;
+
+}
+.nav__direction:hover span {
+    background: radial-gradient(circle, #333131, #dbcdcd);
+    color: white;
+    cursor: pointer;
+    transition: 
+    }
+
+
                 /* 
 
 START / CALL TO ACTION ↓
@@ -874,6 +920,7 @@ START / CALL TO ACTION ↓
                     padding: 0;
                     width: 60%;
                     padding-left: 5em;
+                    padding-top: 3em;
                     // border: 1px solid lightgrey;
                 }
 
@@ -888,12 +935,16 @@ START / CALL TO ACTION ↓
                 #start__buttons {
                     display: flex;
                     justify-content: space-between;
-                    padding: 3em 5em;
+                    padding: 4em 5em;
                     // border: 1px solid white;
                 }
+.start__button {
+    padding: 2em 3em;
+    font-weight: 700;
+}
 
                 #start__button--start {
-                    background-color: coral;
+                    background-color: #d45757;
                 }
 
                     #start__button--start:hover {
@@ -1067,7 +1118,11 @@ MOBILE RESPONSIVENESS ↓
                         max-width: 100%;
                         padding: 0;
                     }
-
+                    #features__paragraph--blue {
+                        padding: 0;
+                        max-width: 100%;
+                        width: 100%;
+                    }
                     @media(max-width: 640px) {
                         .row {
                             flex-direction: column;
