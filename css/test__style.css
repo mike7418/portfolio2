@@ -1183,11 +1183,9 @@ MOBILE RESPONSIVENESS ↓
         .btn__menu {
             display: block;
         }
-
         
-        .large__menu--items {
-            display: hidden;
-            visibility: hidden;
+        .nav__links {
+            display: none;
         }
 
         .header__content h1 {
@@ -1239,11 +1237,6 @@ MOBILE RESPONSIVENESS ↓
             align-items: flex-start;
             max-width: 100%;
             padding: 0;
-        }
-
-        .large__menu {
-            display: hidden;
-            visibility: hidden;
         }
 
         #pricing .row {
@@ -1359,4 +1352,5 @@ MOBILE RESPONSIVENESS ↓
                             margin-bottom: 80px;
                         }
                     }
+
 
