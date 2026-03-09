@@ -387,6 +387,16 @@ nav {
         width: 100%;
         left: 0;
     }
+
+    /*
+        Landing title bar
+    */
+
+    #landing .row {
+        max-width: 100%;
+        width: 1289px;
+        height: 3.7em;
+    }
     /* 
 
 HEADER / ABOUT US ↓
