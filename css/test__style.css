@@ -392,7 +392,7 @@ nav {
         Landing title bar
     */
 
-    #landing .row {
+    nav .row {
         max-width: 100%;
         width: 1289px;
         height: 3.7em;
@@ -1359,3 +1359,4 @@ MOBILE RESPONSIVENESS ↓
                             margin-bottom: 80px;
                         }
                     }
+
