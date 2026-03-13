@@ -1538,6 +1538,16 @@ MOBILE RESPONSIVENESS ↓
                     margin-bottom: 80px;
                 }
 
+                #landing, nav, #values, #features, #quality, #steps, #pricing, #testimonials {
+                    margin-bottom: 3em;
+                }
+
+                #start__text {
+                    width: 100%;
+                    border: 0;
+                    padding: 0;
+                }
+
                 .header__email {
                     flex-direction: column;
                     height: auto;
